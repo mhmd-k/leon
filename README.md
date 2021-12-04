@@ -1,2 +1,2 @@
 # leon
-my first page
+this is my first website made with html and css only
