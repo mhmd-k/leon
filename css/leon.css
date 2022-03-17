@@ -76,7 +76,7 @@ body {
 /* stert header */
 .header {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -93,6 +93,16 @@ div.container {
 }
 .header .container .links {
   position: relative;
+  padding: 5px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header .container .links:hover {
+  border-color: #333;
 }
 .icon {
   width: 30px;
@@ -106,9 +116,6 @@ div.container {
   margin-bottom: 5px;
   background-color: #333;
 }
-.icon span:first-child {
-  width: 100%;
-}
 .icon span:nth-child(2) {
   width: 60%;
   transition: 0.5s;
@@ -117,10 +124,10 @@ div.container {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
+
+.header .container .links:hover .icon span:nth-child(2) ,
+.icon span:first-child ,
 .icon span:last-child {
-  width: 100%;
-}
-.icon:hover span:nth-child(2) {
   width: 100%;
 }
 ul::before {
@@ -140,9 +147,6 @@ ul::before {
   width: 200px;
   display: none;
   z-index: 1;
-}
-.links:hover ul {
-  display: block;
 }
 .container .links ul li:not(:last-child) {
   border-bottom: solid #ddd 1px;
