@@ -1,12 +1,19 @@
 // navbar
-let headLinks = document.getElementById("links");
-let headIcon = document.getElementById("icon");
-headLinks.onclick = function () {
-    if (headIcon.style.display === "none" || headIcon.style.display === "") {
-        headIcon.style.display = "block";
+let navBtn = document.querySelector(".icon");
+let links = document.querySelector("#icon");
+navBtn.onclick = function (e) {
+    e.stopPropagation();
+    if (!links.classList.contains("open")) {
+        links.classList.add("open");
     } else {
-        headIcon.style.display = "none";
+        links.classList.remove("open");
     }
+};
+document.onclick = function () {
+    links.classList.remove("open");
+};
+links.onclick = function (e) {
+    e.stopPropagation();
 };
 // scroll to top button
 let btn = document.querySelector(".scroll-to-top");
