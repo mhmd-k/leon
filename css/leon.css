@@ -110,6 +110,9 @@ div.container {
 .header .container .links:hover {
   border-color: #333;
 }
+.open {
+  display: block !important;
+}
 .icon {
   width: 30px;
   display: flex;
@@ -130,7 +133,6 @@ div.container {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-
 .header .container .links:hover .icon span:nth-child(2) ,
 .icon span:first-child ,
 .icon span:last-child {
