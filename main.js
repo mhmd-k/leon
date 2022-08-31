@@ -1,6 +1,6 @@
 // navbar
-let navBtn = document.querySelector(".icon");
-let links = document.querySelector("#icon");
+const navBtn = document.querySelector(".icon");
+const links = document.querySelector("#icon");
 navBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   if (!links.classList.contains("open")) {
@@ -14,7 +14,7 @@ document.addEventListener("click", function () {
 });
 
 // scroll to top button
-let btn = document.querySelector(".scroll-to-top");
+const btn = document.querySelector(".scroll-to-top");
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 500) {
     btn.style.display = "block";
